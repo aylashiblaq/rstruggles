@@ -1,0 +1,25 @@
+# ======================================================================================
+#Creating binary outcome variable for school district changes
+# ======================================================================================
+
+library(dplyr)
+dn <- data.frame(DATA)
+str(dn)
+
+#arranging by year
+arrange(yr)%>%
+
+#grouping by school district
+group_by(sdname, sbound)%>%
+
+#creating a column?
+mutate(bound)%>%
+
+#creating the binary, going to prior/next year
+sbound$diff <- lead(sbound$yr, 1) - sbound$yr%>%
+sbound$diff <- sbound$yr - lag(sbound$yr)
+
+#here i haven't created the binary yet, but this is taking from the web and it hasn't been bringing me anywhere
+
+#These are the steps I was instructed to fulfill: arrange() data by year, group_by() school district, mutate(), case_when(), 
+#Lead and lag to go to previous and next year, then create the binary and run an initial robustness test
