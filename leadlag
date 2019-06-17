@@ -1,3 +1,9 @@
+library(readxl)
+setwd("~/Desktop/r")
+
+DATA <- read_excel("~/Desktop/r/FINAL.xlsx")
+
+
 # ======================================================================================
 #Creating binary outcome variable for school district changes
 # ======================================================================================
