@@ -3,7 +3,7 @@
 # ======================================================================================
 
 library(readxl)
-setwd("~/Desktop/r")
+
 
 DATA <- read_excel("~/Desktop/r/FINAL.xlsx")
 
