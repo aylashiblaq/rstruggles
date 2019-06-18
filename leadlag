@@ -89,7 +89,7 @@ mutate(sbound =
   lag(yr, n = 1L, default = NA, order_by = sdname)
   )
   
-#robustness test (also doesn't work what a surprise)
+#robustness test (This is a placeholder not a final code, haven't put the formula in obviously)
 lm_robust(formula, DATA, weights,
           se_type = HC2, ci = TRUE, alpha = 0.05, return_vcov = TRUE,
           try_cholesky = FALSE)
